@@ -1,0 +1,23 @@
+{% extends '/base.html.twig' %}
+
+
+
+
+{% block body %}
+
+    <title>{% block title %}He!{% endblock %}</title>
+
+<ol>
+{% for szam  in szamok %}
+
+            <li> {{ szam.type }}
+                {{ szam.size }}
+                {{ szam.owner }}</li>
+
+
+
+
+{% endfor %}
+</ol>
+
+{% endblock %}
