@@ -22,6 +22,7 @@ class VinylController extends  AbstractController
           ['type' => 'nagy' , 'size' => 50 , 'owner' => 'KS'  ] ,
           ['type' => 'nagy' , 'size' => 60 , 'owner' => 'KS'  ]
         ];
+
         return $this->render('vinyl/homepage.html.twig',[
             'title' => 'KS ESZ L',
             'szamok' => $alma
